@@ -1,0 +1,26 @@
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    td { 
+        border: 1px solid #eaeaea;
+        padding: 10px;
+    }
+</style>
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Content</th>
+    </tr>
+    <% for(var i=0; i < result.length; i++) { %>
+    <tr>
+        <td><%= result[i].title %></td>
+        <td><%= result[i].content %></td>
+    </tr>
+    <% } %>
+</table>
+
+<p>
+    <a href="/">Home</a>
+</p>
