@@ -11,6 +11,7 @@ app.use(bodyParser.json())
 
 const MongoClient = require('mongodb').MongoClient;
 
+/* Edit host and port */
 const url = 'mongodb://localhost:27017';
 
 /* Edit with your db name if requiredd */
