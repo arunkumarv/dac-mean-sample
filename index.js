@@ -13,6 +13,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 const url = 'mongodb://localhost:27017';
 
+/* Edit with your db name if requiredd */
 const dbName = 'myproject';
 
 MongoClient.connect(url, { useUnifiedTopology: true }, function (err, client) {
@@ -21,6 +22,7 @@ MongoClient.connect(url, { useUnifiedTopology: true }, function (err, client) {
 
     const db = client.db(dbName);
 
+    /* Specify a collection name instead of documents */
     const collection = db.collection('documents');
 
     app.get('/', (req, res) => {
